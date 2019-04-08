@@ -77,7 +77,45 @@ function SEO({ description, lang, meta, keywords, title }) {
             : []
         )
         .concat(meta)}
-    />
+    >
+      <link
+        href="https://fonts.googleapis.com/css?family=Lato:400,700"
+        rel="stylesheet"
+      />
+
+      <link
+        rel="stylesheet"
+        type="text/css"
+        href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css"
+      />
+      <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js" />
+      <script>
+        {typeof window !== `undefined` &&
+          window.addEventListener("load", function() {
+            typeof window !== `undefined` &&
+              window.cookieconsent.initialise({
+                palette: {
+                  popup: {
+                    background: "#49318B",
+                  },
+                  button: {
+                    background: "#f48120",
+                    text: "white",
+                  },
+                },
+                theme: "classic",
+                position: "bottom-right",
+                content: {
+                  message:
+                    "Strona wykorzystuje pliki cookies w celu prawidłowego jego działania, korzystania z wtyczek społecznościowych (Facebook, Twitter).",
+                  dismiss: "Rozumiem",
+                  link: "",
+                  href: "",
+                },
+              })
+          })}
+      </script>
+    </Helmet>
   )
 }
 

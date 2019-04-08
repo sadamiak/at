@@ -1,0 +1,127 @@
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.articleContainer {
+  display: flex;
+  max-width: 1140px;
+  width: 100%;
+  margin: auto;
+}
+
+.halfSection {
+  width: 50%;
+  padding: 40px;
+  background: white;
+}
+
+.imageSection {
+  padding: 0;
+}
+
+.halfImage {
+  margin-bottom: 0;
+}
+
+.candidatePhoto {
+  background: url("https://scontent-waw1-1.xx.fbcdn.net/v/t1.0-9/53421297_406777886821713_6990789843882082304_o.jpg?_nc_cat=110&_nc_ht=scontent-waw1-1.xx&oh=5a6b9ffdf0aea90f840900bce7c533c3&oe=5D4A7EED");
+  background-size: cover;
+  background-position: right;
+  min-height: 450px;
+}
+
+.wiosnaPhoto {
+  background: url("https://scontent-waw1-1.xx.fbcdn.net/v/t1.0-9/56349181_426435944855907_7925633817098846208_n.jpg?_nc_cat=100&_nc_ht=scontent-waw1-1.xx&oh=101c5f1620642f5f34304031299f6dfa&oe=5D43649C");
+  background-size: cover;
+  background-position: center;
+  min-height: 450px;
+}
+
+.prioritiesPhoto {
+  background: url("  https://scontent-waw1-1.xx.fbcdn.net/v/t1.0-9/54407585_411818889650946_5573755497275719680_o.jpg?_nc_cat=107&_nc_ht=scontent-waw1-1.xx&oh=d216f03eb5da787c1b3857ef3acd3736&oe=5D4C0C34");
+  background-size: cover;
+  background-position: center;
+  min-height: 450px;
+}
+
+.button {
+  display: inline-block;
+  padding: 12px;
+  background: #4f2d8f;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  text-decoration: none;
+  transition: 200ms;
+}
+
+.button:hover {
+  background: #40b36e;
+}
+
+.spacerSection {
+  background: #4f2d8f;
+}
+
+.spacerSection > div {
+  max-width: 1140px;
+  width: 100%;
+  margin: auto;
+  padding: 40px;
+  font-size: 22px;
+  color: white;
+  position: relative;
+}
+
+.spacerSection img {
+  position: absolute;
+  bottom: 40px;
+  right: 200px;
+  height: 22px;
+  width: 24px;
+  margin-bottom: 0;
+}
+
+.spacerSection blockquote {
+  margin: 0;
+}
+
+.halfSection ul {
+  list-style: none;
+}
+
+.halfSection ul li:before {
+  content: url("./images/wiosnaCheck.svg");
+  width: 24px;
+  height: 24px;
+  margin-right: 5px;
+  display: inline-block;
+}
+
+.fullBioPhoto {
+  margin: 20px auto;
+  height: 300px;
+  max-width: 100%;
+}
+
+@media (max-width: 700px) {
+  .articleContainer {
+    flex-direction: column;
+  }
+
+  .halfSection {
+    width: 100%;
+    order: 2;
+    padding: 40px 20px;
+  }
+
+  .imageSection {
+    order: 1;
+  }
+
+  .wiosnaTick {
+    display: none;
+  }
+}
