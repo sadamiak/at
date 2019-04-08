@@ -4,7 +4,7 @@ module.exports = {
     description: `Adam Traczyk - strona oficjalna`,
     author: `Szymon Adamiak`,
   },
-  pathPrefix: "/at",
+  pathPrefix: "/at.github.io",
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
