@@ -1,9 +1,10 @@
 module.exports = {
   siteMetadata: {
     title: `Adam Traczyk`,
-    description: `Adam Traczyk - strona oficjalne`,
+    description: `Adam Traczyk - strona oficjalna`,
     author: `Szymon Adamiak`,
   },
+  pathPrefix: "/at",
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
